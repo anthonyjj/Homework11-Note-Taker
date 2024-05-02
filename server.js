@@ -9,4 +9,4 @@ app.use(express.urlencoded({ extended:true} ))
 
 app.listen(PORT, ()=>{
     console.info(`Server started on http://localhost:${PORT}`)
-};)
+});
