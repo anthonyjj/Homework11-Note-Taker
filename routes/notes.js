@@ -10,8 +10,12 @@ const premadeTasks = [
     "Note 6: Make dinner",
 ];
 
-pageRouter.get('/', (req, res) => {
+/*pageRouter.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, `../public/notes.html`));
-});
+});*/
+
+pageRouter.get('/', (req, res) => {
+    res.render('notes', { premadeTasks });
+  });
 
 module.exports = { pageRouter };
